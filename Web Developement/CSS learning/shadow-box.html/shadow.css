@@ -1,0 +1,10 @@
+
+p{
+  border:1px blue solid;
+  background-color: lightgreen;
+  width: 500px;
+  padding: 50px;
+  font-size: 18px;
+  margin: 50px;
+  box-shadow:30px 40px  20px grey, -30px 40px  20px  red;
+}

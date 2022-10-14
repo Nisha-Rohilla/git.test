@@ -1,0 +1,30 @@
+body{
+  background-color: lightblue;
+  color:blue;
+}
+
+#bg{
+  background-color:black;
+  color: white;
+  text-align:left;
+  text-transform: uppercase;
+  direction:rtl;
+  unicode-bidi: bidi-override;
+  text-decoration: underline;
+}
+
+p{
+  background-color: yellow;
+  color:black;
+  text-decoration: line-through;
+}
+
+.TEXT{
+  background-color: lightgrey;
+  color:black;
+  text-align: justify;
+  text-decoration-style: wavy;
+  letter-spacing: 5px;
+  text-decoration: overline;
+
+}

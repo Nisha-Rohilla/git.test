@@ -1,0 +1,72 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+header{
+
+    text-align:right;
+    padding: 1%;
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+   font-size: 40px;
+}
+  
+
+a{
+    
+    color: gray;
+    align-items: center;
+    text-decoration: none;
+}
+
+span{
+    color: red;
+    
+}
+
+.leftdiv{
+    float: left;
+   
+    padding: 1%;
+    text-align: justify;
+}
+
+.middlediv{
+    float: left;
+    
+}
+
+.rightdiv{
+    float: left;
+    
+}
+
+div{
+    background-color: black;
+    color: white;
+    text-justify: newspaper;
+    padding: 1%;
+    margin: 2%;
+    border: 2px;
+    border-radius:20px;
+    width:25%;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    
+    border: 2px;
+    border-radius: 8%;
+}
+
+button:hover{
+    background-color: bisque;
+}

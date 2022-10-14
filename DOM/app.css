@@ -1,0 +1,13 @@
+#header-title{
+    background-color: aquamarine;
+    border: 1px solid red;
+}
+#list{
+    font-size: 40px;
+}
+.list-item{
+    border: 1px solid black;
+    font-size: 15px;
+    padding:10px;
+    font-weight: 700;
+}

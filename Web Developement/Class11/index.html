@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <style>
+      /* utils class */
+
+      .img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .right {
+        text-align: right;
+      }
+      /*  */
+
+      header {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header div {
+        flex: 1;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .header-logo {
+        height: 30px;
+      }
+
+      .header-image {
+        height: 24px;
+        width: 24px;
+      }
+
+      /* Poster */
+      .poster {
+        padding: 25px 20px;
+        background-color: var(--orange-bg);
+      }
+
+      .poster-div {
+        text-align: center;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      .summery {
+        font-style: normal;
+        font-weight: 600;
+        line-height: 123.6%;
+        color: var(--black);
+        margin-top: 30px;
+      }
+
+      .summery span {
+        color: var(--orange);
+      }
+
+      .description {
+        margin: 20px 0;
+        font-weight: 400;
+        line-height: 150.6%;
+        color: var(--gray);
+      }
+
+      .button {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123.6%;
+        color: var(--white);
+        background-color: var(--orange);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        margin: auto;
+        display: flex;
+      }
+
+      /* About Section */
+      .about {
+        padding: 40px 0;
+      }
+
+      .about .title {
+        margin-top: 50px;
+        margin-bottom: 18px;
+
+        font-weight: 400;
+        line-height: 150.6%;
+        color: var(--gray);
+      }
+
+      .about .content {
+        margin: 25px;
+      }
+
+      .about .summery {
+        margin-bottom: 18px;
+      }
+
+      .about .description {
+        margin-bottom: 25px;
+      }
+
+      /* Card box */
+      .about .card-box {
+        padding: 40px 0;
+      }
+
+      .about .about-box {
+        padding: 20px 25px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .about .about-box:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      .about .about-box h5 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 123.6%;
+        margin-top: 7px;
+      }
+
+      .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--white);
+        display: none;
+      }
+    </style>
+
+    <!-- Box-shadow -->
+    <!-- box-shadow: h-offset v-offset blur spread color; -->
+    <!-- https://www.cssmatic.com/box-shadow -->
+
+    <!-- text - responsive -->
+    <style>
+      @media (min-width: 768px) {
+        nav {
+          display: flex;
+          width: 100%;
+          margin: 0 10%;
+        }
+
+        .right {
+          display: none;
+        }
+
+        .poster {
+          display: flex;
+          flex-direction: row-reverse;
+          position: relative;
+          padding: 40px 30px;
+        }
+
+        .poster > div {
+          flex: 1;
+        }
+
+        .poster .poster-content {
+          margin-right: 30px;
+        }
+
+        .poster .summery,
+        .poster .description {
+          text-align: left;
+        }
+
+        .poster .button {
+          margin-left: 0;
+        }
+
+        .icon-box {
+          position: absolute;
+          right: 10px;
+          display: flex;
+          flex-direction: column;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/images/Logo.png" alt="Logo" class="header-logo" />
+      </div>
+
+      <nav>
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Our Work</div>
+        <div>Clients</div>
+        <div>Our Blog</div>
+        <div>Contact Us</div>
+      </nav>
+
+      <div class="center">
+        <img src="./assets/images/Light.png" alt="Light" class="header-image" />
+      </div>
+
+      <div class="right">
+        <img src="./assets/images/Menu.png" alt="Menu" class="header-image" />
+      </div>
+
+      <div class="mobile-nav">
+        <header>
+          <div>
+            <img
+              src="./assets/images/Logo.png"
+              alt="Logo"
+              class="header-logo"
+            />
+          </div>
+
+          <div class="center">
+            <img
+              src="./assets/images/Light.png"
+              alt="Light"
+              class="header-image"
+            />
+          </div>
+
+          <div class="right">X</div>
+        </header>
+        <div>
+          <div>Home</div>
+          <div>About Us</div>
+          <div>Our Work</div>
+          <div>Clients</div>
+          <div>Our Blog</div>
+          <div>Contact Us</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="poster">
+        <div class="poster-div">
+          <img class="img" src="./assets/images/poster.png" alt="poster" />
+        </div>
+
+        <div class="poster-content">
+          <h3 class="h3 center summery">
+            We Are The Best <span>Digital Agency</span> for business
+          </h3>
+
+          <h6 class="h6 center description">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </h6>
+
+          <button class="h5 center button">Contact Us</button>
+        </div>
+        <div class="icon-box">
+          <img
+            src="./assets/icons/Icons/Logos/facebook-fill.png"
+            alt="facebook"
+          />
+          <img
+            src="./assets/icons/Icons/Logos/instagram-fill.png"
+            alt="instagram"
+          />
+
+          <img
+            src="./assets/icons/Icons/Logos/twitter-fill.png"
+            alt="twitter"
+          />
+
+          <img src="./assets/icons/Icons/Logos/skype-fill.png" alt="skype" />
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="poster-div">
+          <img src="./assets/images/About.png" alt="poster" class="img" />
+        </div>
+
+        <div class="content">
+          <h6 class="h6 center title">About Us</h6>
+
+          <h3 class="h3 center summery">
+            We Are <span> Making Ideas Better</span> For Everyone
+          </h3>
+
+          <h6 class="h6 center description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+            imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean
+            <br /><br />
+            Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
+            faucibus est, dui interdum ut amet.
+          </h6>
+
+          <button class="h5 center button">Contact Us</button>
+
+          <div class="card-box">
+            <div class="about-box">
+              <div class="center">
+                <img src="./assets/icons/docs.svg" alt="Document" />
+              </div>
+
+              <h5 class="h5 center">World leader in consulting and finance</h5>
+            </div>
+
+            <div class="about-box">
+              <div class="center">
+                <img src="./assets/icons/docs.svg" alt="Document" />
+              </div>
+
+              <h5 class="h5 center">World leader in consulting and finance</h5>
+            </div>
+
+            <div class="about-box">
+              <div class="center">
+                <img src="./assets/icons/docs.svg" alt="Document" />
+              </div>
+
+              <h5 class="h5 center">World leader in consulting and finance</h5>
+            </div>
+
+            <div class="about-box">
+              <div class="center">
+                <img src="./assets/icons/docs.svg" alt="Document" />
+              </div>
+
+              <h5 class="h5 center">World leader in consulting and finance</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

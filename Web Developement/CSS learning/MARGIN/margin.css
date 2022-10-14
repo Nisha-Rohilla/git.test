@@ -1,0 +1,27 @@
+#two{
+  border: 1px solid red;
+  background-color: lightblue;
+  font-size: 20px;
+  margin: auto;
+}
+
+
+
+body{
+  border: 2px solid green;
+  margin-left: 100px;
+}
+
+#three{
+  border: 2px solid blue;
+  background-color:yellow;
+  font-size: 25px;
+  margin-left: inherit;  /*inherit from parent class */
+  margin-right:50px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+/*  outline-style: solid;
+  outline-color: green;*/
+  outline: 2px solid green;
+  outline-offset: 10px;
+}

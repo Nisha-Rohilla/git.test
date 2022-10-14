@@ -1,0 +1,20 @@
+#p2{
+  color: red;
+  width: auto;
+}
+
+/* class*/
+.green-text{
+  color: green;
+}
+
+/* Element */
+p{
+  color: blue;
+}
+
+
+/* id  */
+#h{
+  font-family: cursive;
+}

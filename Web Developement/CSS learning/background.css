@@ -1,0 +1,27 @@
+#bg{
+
+background-color: yellow;
+
+ /*background: inherit;
+  background: initial;
+  background: revert;
+  background: unset;*/
+  opacity: 0.4;
+  font-size: 20px;
+}
+
+#xyz{
+  background-color: lightblue;
+  opacity: 0.3;
+  background-image: url("a.jpg");  /*not working image attribute*/
+}
+
+#bc{
+  background-color: pink;
+  opacity: 0.6;
+}
+
+#ab{
+  background-color: red;
+  opacity: 0.7;
+}

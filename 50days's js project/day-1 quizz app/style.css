@@ -1,0 +1,47 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,500;0,600;0,700;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
+body{
+    /* background-color: rgb(122, 111, 200); */
+    background-image: url(https://1.bp.blogspot.com/-o6Smu5lh-2M/XuM2Ac016OI/AAAAAAAAFTU/WJo4qDaUq9QT3UVQrbZ_e13fbEIzDCruwCEwYBhgLKtMDAL1OcqzZ5Rtgh4-6lSg6Gj9Stmj2GWst9F8wAJ8RB8sOxwFBB64Vwv0HAuoTfPaLq6Qp5ARQDxLmiDtRuwetlV6SAR2yYYFnHT8VOEBFuTE6dGE18GskIPMdrlzNjX2hb7YvepghZ-AFproXtFs1vPn0uxGn8PwNRRcRrPsKP6YqImDUhTZPrLRV-9uGbFYGSeZBiodpJpsPGbWMV4lnNOTUdlIRFk7nfAPG_eOeg6x0mzYTndIE1TYoD-ucMLrICVw9dJ8XeK8V-uaegIEAHVvGoTEvooxnh1BHpLvNt_Uew44kFSvxUGBYFoqBnRp8moKnmDGFF1JcAgqqCZYmwxmdO-r56jqwj3YnL9_bm0B0_dq0oZGz5JOVMRDYT3_p4IF6aqf0ZE4qDU80B-ExU9PtjGtJvmHlMwktNNbVjf-oMSpNXdyZztIQsLm5WSF80VJ2PtxSdecWeUm2EwgoWX9-0f3zREph94aR26-qtV3cB5m_BpezKjysQuL1MjEo-3ABEjsi_o6htUgSuKQtnTFbhk1ERx2Ad4KloghWk4h5SvfMPJjX9PVyR9utblRvoUxav7PcV0FU1efY9V5fnYDAcwdlCva5qiSIMF1alURQpDQwgvSM9wU/s1600/quiz.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-family: 'Roboto', sans-serif;
+    /* opacity: 0.5; */
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+#box{
+    width: 40%;
+    /* height: 400px; */
+    padding: 15px;
+    box-shadow:0px 0px 5px grey ;
+    background-color: white;
+    border-radius:5px;
+}
+.row{
+    width:100%;
+    margin:2rem;
+    margin-left: 0;
+}
+.btn{
+    width: 100%;
+    padding: 7px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(149, 74, 220);
+}
+

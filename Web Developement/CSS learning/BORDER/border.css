@@ -1,0 +1,40 @@
+#h1{
+  border-style:dotted;
+  border-width: medium;
+}
+
+#h2{
+  border-bottom: double;
+  border-width: thin;
+  border-color: blue;
+}
+
+#h3{
+  border-style: groove;
+  border-width:5px;
+  border-style: dotted solid double dashed;
+
+}
+
+#ram{
+  border-style:inset;
+  border-width: 10px;
+  border-color: red;
+}
+
+#css{
+  border-style: solid;
+  border-width: 50px 40px 30px 20px;  /* top right bottom left */
+  border-color: blue red green yellow;
+  background-color: lightblue;
+  border-radius: 5px;
+
+}
+
+#borderfont{
+  border: lightblue 10px solid; /* shorthand */
+  font-size: 30px;
+  font-style: oblique;
+  border-radius: 10px;
+
+}
